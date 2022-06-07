@@ -13,12 +13,13 @@ const ay = document.querySelector(".mm");
 const yil = document.querySelector(".year");
 const iFrame = document.querySelector(".video");
 const closex = document.querySelector("#close");
+const alert = document.querySelector(".warning");
 
 closex.style.display="none";
 iFrame.style.display="none";
 let load = 0;
 let blurr = 30;
-var audio = new Audio("/bulanik-yukleme-ekrani/official-call-of-duty-black-ops-3-multiplayer-music-ignition.mp3");
+var audio = new Audio("/call-of-duty-blurPage/official-call-of-duty-black-ops-3-multiplayer-music-ignition.mp3");
 
 let int = setInterval(() => {
     load++;
@@ -87,11 +88,15 @@ form.addEventListener('submit',(e)=>{
             popUp.style.display="none";
         })
         
-    }else if(yil.value==null || ay.value==null || gun.value==null){
-        console.log("eeeaaa");
+    }else if(age==3863662188148){
+        alert.textContent = "Please fill the blanks!"
+        iFrame.style.display="none";
+    }else{
+        alert.textContent = "You are under age!"
+        iFrame.style.display="none";
     }
 
-
+    console.log(ay.value);
 })
 
 

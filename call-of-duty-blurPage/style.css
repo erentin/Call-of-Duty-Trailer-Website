@@ -11,7 +11,7 @@ body{
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;}
 .container .background{
-    background: url('/bulanik-yukleme-ekrani/thumb-1920-597965.jpg') no-repeat center/cover;
+    background: url('/call-of-duty-blurPage/thumb-1920-597965.jpg') no-repeat center/cover;
     position: absolute;
     z-index: -1;
     width: 100vw;
@@ -75,7 +75,7 @@ body{
 }
 .container .pop-up .pop-up-content form{
     display: flex;
-    height: 200px;
+    height: 225px;
     flex-direction: column;
     align-items: center;
 }
@@ -121,4 +121,10 @@ iframe{
     text-align: center;
     border-radius: 2px;
     font-weight: 600;
-    cursor: pointer;}
+    cursor: pointer;
+}
+
+.warning {
+    margin-bottom: 20px;
+}
+
