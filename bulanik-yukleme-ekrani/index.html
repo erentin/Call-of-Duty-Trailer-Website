@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurry Loading</title>
+    <link rel="stylesheet" href="/bulanik-yukleme-ekrani/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="play">
+            <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="pause">
+            <i class="fa-solid fa-pause"></i>
+        </div>
+        <div class="text">%0</div>
+        <div class="text_start"></div>
+        <div class="pop-up">
+            <iframe class="video" width="450" height="350"  src="https://www.youtube.com/embed/qAUYNIDEJ6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button type="submit" id="close">CLOSE</button>
+            <div class="pop-up-content">
+                <form class="form" action="">
+                    <input type="number" name="dd" class="dd"  min="1" max="30" placeholder="DD" value="01">
+                    <input type="number" name="mm" class="mm" min="1" max="30" placeholder="MM" value="01">
+                    <input type="number" name="year" class="year" min="1920" max="2023" placeholder="YEAR" value="2022">
+                    <div class="buttons">
+                        <button type="submit" id="cancel">CANCEL</button>
+                        <button type="submit" id="confirm">CONFIRM</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script  src="/bulanik-yukleme-ekrani/script.js"></script>
+</body>
+</html>

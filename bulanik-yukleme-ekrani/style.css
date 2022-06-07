@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;}
+.container .background{
+    background: url('/bulanik-yukleme-ekrani/thumb-1920-597965.jpg') no-repeat center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    filter: blur(30px);}
+.container .text{
+    position: absolute;
+    bottom: 20%;
+    right: calc(50% - 50px);
+    font-size: 50px;
+    color: white;
+    font-weight: 600;}
+.container .text_start{
+    width: 400px;
+    border-radius: 10px;
+    background-color: #E96911;
+    position: absolute;
+    bottom: 20%;
+    right: calc(50% - 200px);
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+    justify-content: center;}
+.container .text_start:hover{
+    color: #E96911;
+    background-color: black;}
+.container 
+.play,.pause{
+    position: absolute;
+    font-size: 20px;
+    left: 20px;
+    top: 20px;
+    color: white;
+    word-spacing: 30px;
+    transition: ease-in-out 0.5s;
+}
+.container .pause{
+    left: 60px;
+}
+.container .play:hover,.pause:hover{
+    color: #E96911;
+}
+.container .pop-up{
+    color: white;
+    background-color: #E96911;
+    display: none;
+    flex-direction: column;
+    top: 20%;
+    z-index: 3;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.966);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.container .pop-up .pop-up-content form{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+}
+.container .pop-up .pop-up-content input{
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.container .pop-up .pop-up-content button{
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: #E96911;
+    border: 0px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.container .pop-up .pop-up-content button:hover{
+    background-color: #000000;
+    color: #E96911;
+ 
+}
+.pop-up-content #cancel{
+    background-color: #d65600;
+}
+iframe{
+    display: flex;
+}
+#close{
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: #1b1b1b;
+    border: 0px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 600;
+    cursor: pointer;}
